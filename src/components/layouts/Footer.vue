@@ -1,6 +1,6 @@
 <template>
   <div class="bg-secondary-100 p-10">
-    <d-container class="flex flex-col gap-8 px-12">
+    <d-container class="flex flex-col gap-8 sm:px-12">
       <div class="text-secondary-500 title1">Company</div>
       <div class="flex justify-between text-primary font-bold body1">
         <div>About</div>

@@ -4,14 +4,14 @@
     <div class="flex flex-col">
       <div class="font-600 text-secondary-500 body3">{{ author }}</div>
       <div class="text-secondary-400 font-500 body3 leading-5">
-        {{ time }}
+        <d-remaining-time :time="time" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import DAvatar from "../common/DAvatar.vue";
+import { DAvatar, DRemainingTime } from "../common";
 
 defineProps({
   time: { type: String, default: "" },

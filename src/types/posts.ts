@@ -3,18 +3,11 @@ export interface CommentType {
   date: string;
 }
 
-export interface Post {
+export interface PostType {
   id: number;
-  name: string;
-  telegram: string;
-  note: string;
-  createdAt: number;
-  updatedAt: number;
-  email: string;
-  phone: string;
-  avatar: string;
-  address: string;
-  company: string;
-  gender: string;
+  author: string;
+  title: string;
+  date: string;
+  tags: string[];
   comments: CommentType[];
 }

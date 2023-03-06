@@ -1,7 +1,7 @@
 <template>
   <d-avatar-card
     src="/src/assets/images/avatar2.png"
-    :time="timeFromNow"
+    :time="comment?.date"
     :author="comment?.username"
   />
   <div
@@ -27,11 +27,6 @@ const props = defineProps({
 });
 
 const { comment } = toRefs(props);
-
-const timeFromNow = computed(() => {
-  dayjs.extend(relativeTime);
-  return dayjs(comment.value?.date).fromNow();
-});
 </script>
 
 <style module lang="css">
