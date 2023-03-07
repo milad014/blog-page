@@ -12,7 +12,7 @@
 
     <div class="flex flex-col">
       <d-avatar-card
-        src="/src/assets/images/avatar.png"
+        src="http://www.wallpaperg.com/uploads/file/1452484590-sweet-baby-boy-image-file.jpg"
         :time="post?.date"
         :author="post?.author"
       />

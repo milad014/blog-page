@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden rounded-full">
-    <img class="min-w-48px min-h-48px" :src="src" :alt="alt" />
+    <img class="w-48px h-48px" :src="src" :alt="alt" />
   </div>
 </template>
 

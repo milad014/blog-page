@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-5">
     <d-avatar-card
-      src="/src/assets/images/avatar2.png"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCCZoAXkbKbJK-kU4ntpiWxSgzQfRlLAH8CvT-nH5kg&s"
       :time="comment?.date"
       :author="comment?.username"
     />

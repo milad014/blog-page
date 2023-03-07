@@ -2,7 +2,10 @@
   <div class="w-full m-auto bg-secondary-300">
     <d-container class="flex gap-4 p-8">
       <div>
-        <d-avatar src="/src/assets/images/avatar.png" :alt="post?.author" />
+        <d-avatar
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwoO5MIJPyw1ac2dqj8QAsOXIxh4v3qp1kQ&usqp=CAU"
+          :alt="post?.author"
+        />
       </div>
       <div class="flex flex-col gap-3">
         <div class="text-primary font-bold leading-8 title1">
