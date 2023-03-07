@@ -13,7 +13,7 @@
         ></textarea>
         <d-button
           v-if="text.length"
-          :round-full="true"
+          round-full
           :loading="isLoading"
           title="Submit"
           class="flex justify-center my-3"

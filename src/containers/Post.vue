@@ -1,10 +1,12 @@
 <template>
-  <d-container>
-    <post-header />
-    <post-body :post="post" />
-  </d-container>
-  <author-biography />
-  <comments :comments="post?.comments" />
+  <div>
+    <d-container>
+      <post-header />
+      <post-body :post="post" />
+    </d-container>
+    <author-biography :post="post" />
+    <comments :comments="post?.comments" />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -14,7 +16,7 @@ import { useRoute } from "vue-router";
 
 import { DContainer } from "../components/common/";
 import Comments from "../components/posts/Comments.vue";
-import AuthorBiography from "../components/posts/AuthorAbout.vue";
+import AuthorBiography from "../components/posts/AuthorBiography.vue";
 import PostHeader from "../components/posts/PostHeader.vue";
 import PostBody from "../components/posts/PostBody.vue";
 

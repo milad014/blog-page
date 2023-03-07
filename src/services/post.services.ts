@@ -1,4 +1,3 @@
-import { Post } from "../types/posts";
 import { api } from "../utils/http-common";
 
 export function getPost(id: string) {

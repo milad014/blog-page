@@ -17,7 +17,7 @@ import { DLoading } from "../common";
 const props = defineProps({
   title: { type: String, default: "" },
   loading: { type: Boolean, default: false },
-  roundFull: { type: String, default: false },
+  roundFull: { type: Boolean, default: false },
 });
 </script>
 

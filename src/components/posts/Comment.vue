@@ -1,16 +1,18 @@
 <template>
-  <d-avatar-card
-    src="/src/assets/images/avatar2.png"
-    :time="comment?.date"
-    :author="comment?.username"
-  />
-  <div
-    :class="[
-      'title3 text-secondary-500 leading-7 bg-secondary-200 rounded-4 p-5',
-      $style.noRoundTopLeft,
-    ]"
-  >
-    {{ comment?.text }}
+  <div class="flex flex-col gap-5">
+    <d-avatar-card
+      src="/src/assets/images/avatar2.png"
+      :time="comment?.date"
+      :author="comment?.username"
+    />
+    <div
+      :class="[
+        'title3 text-secondary-500 leading-7 bg-secondary-200 rounded-4 p-5',
+        $style.noRoundTopLeft,
+      ]"
+    >
+      {{ comment?.text }}
+    </div>
   </div>
 </template>
 

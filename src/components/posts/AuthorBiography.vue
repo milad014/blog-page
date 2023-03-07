@@ -12,7 +12,7 @@
           Latoyia is a New York Times bestseller and a RITA® winner.
         </div>
         <div class="flex gap-4 py-2">
-          <d-button :round-full="true" title="Following">
+          <d-button round-full title="Following">
             <template #left-icon>
               <check-icon />
             </template>
@@ -31,4 +31,12 @@
 <script setup lang="ts">
 import { CheckIcon, SaveIcon } from "../../components/icons/";
 import { DButton, DContainer, DAvatar } from "../../components/common/";
+import { PropType, toRefs } from "vue";
+import { PostType } from "../../types/posts";
+
+const props = defineProps({
+  post: { type: Object as PropType<PostType>, required: true },
+});
+
+const { post } = toRefs(props);
 </script>
