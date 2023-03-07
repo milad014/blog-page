@@ -30,7 +30,7 @@ import { PropType, toRefs } from "vue";
 
 import { PostType } from "~/types/posts";
 
-import { DTag, DAvatar } from "../../components/common/";
+import { DTag, DAvatarCard } from "../../components/common/";
 
 defineProps({
   post: { type: Object as PropType<PostType>, required: true },
